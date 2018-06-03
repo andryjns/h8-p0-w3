@@ -1,16 +1,14 @@
 function balikString (kata){
-    var urut = kata.length-1
+
     var rpt$ = ''
 
-    while (urut>=0){
-        rpt$ += kata[urut]
-        urut--
-    }
+    for (i= kata.length-1; i>=0; i--) {
+        rpt$ += kata[i]
+    } 
     return rpt$
 }
 
 console.log (balikString("hello world!"))
-
 
 
 //input "hello world!"

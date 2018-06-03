@@ -7,29 +7,22 @@ var input = [
 
 function dataHandling(input) {
     
-var max = input.length-1
-var urut = 0
-
-    while (max>=0){
-
-        var nomor = input [urut][0]
-        var nama = input [urut][1]
-        var tempat = input [urut][2]
-        var tanggal = input [urut][3]
-        var hobi = input [urut][4]
+    for (i= 0; i< input.length; i++) {
+        var nomor = input [i][0]
+        var nama = input [i][1]
+        var tempat = input [i][2]
+        var tanggal = input [i][3]
+        var hobi = input [i][4]
 
         console.log ('Nomor ID: '+nomor)
         console.log ('Nama Lengkap: '+nama)
         console.log ('TTL: '+tempat+ ' ' +tanggal)
         console.log ('Hobi: '+hobi)
         console.log ()
-
-        urut++
-        max--
     } 
 }
 
-dataHandling(input) 
+dataHandling(input)
 
 
 

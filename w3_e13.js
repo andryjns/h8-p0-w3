@@ -3,20 +3,17 @@ function targetTerdekat(arr) {
     var arrO= []
     var arrX= []
     
-    for (var i = 0; i < arr.length; i++) {       // cari 'o' di index berapa
+    for (var i = 0; i < arr.length; i++) {       // cari 'o' di index berapa & 'x' di index berapa saja
         if (arr[i] === 'o') {
             arrO.push(i)
-        }
-    }
-
-    for (var i = 0; i < arr.length; i++) {       // cari 'x' di index berapa saja
+        }else
         if (arr[i] === 'x') {
             arrX.push(i)
         }
     }
     
-      // console.log (arrO)
-      // console.log (arrX)
+       console.log (arrO)
+       console.log (arrX)
     
     if (arrX.length === 0) {
         arrX=arrO
